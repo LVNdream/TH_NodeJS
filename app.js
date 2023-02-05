@@ -1,7 +1,7 @@
 const express = require("express");
 const cros = require("cors");
 const app = express();
-const ApiError = require("./app/app-error")
+const ApiError = require("./app/api-error")
 app.use(cros());
 app.use(express.json())
 app.get("/", (req, res) => {
